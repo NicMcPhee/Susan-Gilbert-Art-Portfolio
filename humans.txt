@@ -13,7 +13,7 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
+  Components: Modernizr, jQuery, Bootstrap, Bootstrap Carousel, Initializr
   Software:
 
 
