@@ -31,6 +31,7 @@ a:hover {
   text-transform: none;
   font-weight: bold;
   font-variant: small-caps;
+  letter-spacing: 0.05em;
   text-indent: -0.5em;
   font-size: 21px;
   line-height: 27px;
