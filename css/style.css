@@ -37,3 +37,18 @@ a:hover {
   line-height: 27px;
   color: #888888;
 }
+
+/* Gallery settings */
+
+.gallery-header {
+	padding-bottom: 25px;
+}
+
+.thumbnail > p {
+	font-size: 1em;
+	padding: 1em;
+}
+
+.thumbnail .caption {
+	padding: 1px;
+}
