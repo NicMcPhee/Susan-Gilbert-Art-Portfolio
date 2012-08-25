@@ -52,3 +52,7 @@ a:hover {
 .thumbnail .caption {
 	padding: 1px;
 }
+
+.about_navbar {
+	fixed: top;
+}
