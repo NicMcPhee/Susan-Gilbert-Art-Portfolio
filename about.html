@@ -22,6 +22,13 @@
 	</style>
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">  
+	.about-sections {  
+	height: 200px;  
+	overflow: auto;  
+	position: relative;  
+	}  
+	</style>
 
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
@@ -67,7 +74,7 @@
 
     <div class="container-fluid">
 	
-		<div class="navbar about_navbar">
+		<div class="navbar navbar-static" id="about_navbar">
 		  <div class="navbar-inner">
 		    <ul class="nav">
 		      <li class="active"><a href="#artist_statement">Artist statement</a></li>
@@ -79,9 +86,8 @@
 		
 	<div class="row-fluid">
 		
-      <div class="span10" data-spy="scroll" data-target=".about_navbar">
-		<div id="artist_statement">
-        <h1>Artist statement</h1>
+      <div class="span10 about-sections" data-spy="scroll" data-offset="50" data-target="#about_navbar">
+        <h1 id="artist_statement">Artist statement</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa arcu, commodo vel porttitor ac, rhoncus at turpis. Phasellus eget ligula et dolor interdum tempus. Sed auctor, tellus ut blandit accumsan, dolor lorem aliquam eros, sed aliquet tortor dolor at leo. Nulla eros nisl, scelerisque sit amet fermentum quis, porttitor sodales urna. Aliquam erat volutpat. Aliquam commodo pharetra sagittis. Aliquam erat volutpat. Integer condimentum, turpis eu vulputate accumsan, justo nunc dictum felis, sed ultrices est tortor vitae augue. Pellentesque at dui lacus, id molestie nisi. Nullam sed massa non purus pulvinar laoreet quis in diam.
 </p>
 <p>
@@ -90,10 +96,8 @@
 	<p>
 		Suspendisse faucibus, ante ut fermentum accumsan, nisi purus tincidunt nisl, vitae lacinia nisi odio nec velit. Aenean dolor turpis, ornare ac pretium a, interdum sed nisi. Maecenas sodales rhoncus ipsum quis sagittis. Pellentesque elit leo, congue vel blandit eget, aliquam sed massa. Sed quis neque sapien, id bibendum sapien. Duis sit amet mollis nulla. Aenean lobortis diam et turpis porta commodo.
 	</p>
-	</div>
 	<hr>
-	<div id="CV">
-		<h1>Curriculum Vitae</h1>
+		<h1 id="CV">Curriculum Vitae</h1>
 		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa arcu, commodo vel porttitor ac, rhoncus at turpis. Phasellus eget ligula et dolor interdum tempus. Sed auctor, tellus ut blandit accumsan, dolor lorem aliquam eros, sed aliquet tortor dolor at leo. Nulla eros nisl, scelerisque sit amet fermentum quis, porttitor sodales urna. Aliquam erat volutpat. Aliquam commodo pharetra sagittis. Aliquam erat volutpat. Integer condimentum, turpis eu vulputate accumsan, justo nunc dictum felis, sed ultrices est tortor vitae augue. Pellentesque at dui lacus, id molestie nisi. Nullam sed massa non purus pulvinar laoreet quis in diam.
 		</p>
 		<p>
@@ -102,10 +106,8 @@
 			<p>
 				Suspendisse faucibus, ante ut fermentum accumsan, nisi purus tincidunt nisl, vitae lacinia nisi odio nec velit. Aenean dolor turpis, ornare ac pretium a, interdum sed nisi. Maecenas sodales rhoncus ipsum quis sagittis. Pellentesque elit leo, congue vel blandit eget, aliquam sed massa. Sed quis neque sapien, id bibendum sapien. Duis sit amet mollis nulla. Aenean lobortis diam et turpis porta commodo.
 			</p>
-		</div>
 		<hr>
-		<div id="biography">
-		<h1>Biography</h1>
+		<h1 id="biography">Biography</h1>
 		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa arcu, commodo vel porttitor ac, rhoncus at turpis. Phasellus eget ligula et dolor interdum tempus. Sed auctor, tellus ut blandit accumsan, dolor lorem aliquam eros, sed aliquet tortor dolor at leo. Nulla eros nisl, scelerisque sit amet fermentum quis, porttitor sodales urna. Aliquam erat volutpat. Aliquam commodo pharetra sagittis. Aliquam erat volutpat. Integer condimentum, turpis eu vulputate accumsan, justo nunc dictum felis, sed ultrices est tortor vitae augue. Pellentesque at dui lacus, id molestie nisi. Nullam sed massa non purus pulvinar laoreet quis in diam.
 		</p>
 		<p>
@@ -114,7 +116,6 @@
 			<p>
 				Suspendisse faucibus, ante ut fermentum accumsan, nisi purus tincidunt nisl, vitae lacinia nisi odio nec velit. Aenean dolor turpis, ornare ac pretium a, interdum sed nisi. Maecenas sodales rhoncus ipsum quis sagittis. Pellentesque elit leo, congue vel blandit eget, aliquam sed massa. Sed quis neque sapien, id bibendum sapien. Duis sit amet mollis nulla. Aenean lobortis diam et turpis porta commodo.
 			</p>
-		</div>
       </div>
 
 	  <div class="span2">
@@ -155,7 +156,7 @@
 <script src="js/script.js"></script>
 
 <script>
-$('#about_navbar').scrollspy()
+$('#about_navbar').scrollspy();
 </script>
 <!-- end scripts-->
 
