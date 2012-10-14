@@ -65,7 +65,11 @@
 			closeBtn: true,
 			closeClick: false,
 			nextClick : false,
-			mouseWheel: true,
+			// This was true by default, but we turned it off
+			// because both Sue and I assumed it would allow us
+			// to scroll down a full size picture instead of
+			// flying through the images.
+			mouseWheel: false,
 			autoPlay: false,
 			playSpeed: 3000,
 			preload : 3,
