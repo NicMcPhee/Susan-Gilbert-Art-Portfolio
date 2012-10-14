@@ -44,21 +44,27 @@ a:hover {
 	padding-bottom: 25px;
 }
 
-.thumbnail > p {
-	font-size: 1em;
-	padding: 1em;
+.thumbnail {
+	/* Turn off the various border features in the thumbnails. */
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .thumbnail .caption {
+	/* Set the weight and spacing for caption text in thumbnails. */
 	line-height: 1.25em;
 	font-weight: inherit;
 	padding-left: 0.5em;
+	font-size: 1em;
 }
 
 .thumbnail h4 {
 	padding-top: 1em;
 	padding-left: 0.5em;
 }
+
+/* About… page */
 
 .about_navbar {
 	fixed: top;
