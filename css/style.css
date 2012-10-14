@@ -64,6 +64,10 @@ a:hover {
 	padding-left: 0.5em;
 }
 
+.fancybox-nav:hover span {
+	visibility: hidden;
+}
+
 /* About… page */
 
 .about_navbar {
