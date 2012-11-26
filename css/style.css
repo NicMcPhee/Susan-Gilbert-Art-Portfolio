@@ -73,3 +73,7 @@ a:hover {
 .about_navbar {
 	fixed: top;
 }
+
+.about-sidebar.affix {
+    top: 100px;
+}
