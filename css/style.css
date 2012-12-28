@@ -67,13 +67,3 @@ a:hover {
 .fancybox-nav:hover span {
 	visibility: hidden;
 }
-
-/* About… page */
-
-.about_navbar {
-	fixed: top;
-}
-
-.about-sidebar.affix {
-    top: 100px;
-}
