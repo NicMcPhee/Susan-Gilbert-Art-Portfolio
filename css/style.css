@@ -1,7 +1,5 @@
-
-
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Nic McPhee
    ========================================================================== */
 
 #front_page_image { height: 640px; overflow: hidden; }
@@ -17,6 +15,10 @@ a {
 
 a:hover {
   color: #000000;
+}
+
+cite {
+	font-style: italic;
 }
 
 /* Change the active element in the right hand navbar to grays. */
@@ -38,7 +40,18 @@ a:hover {
   color: #888888;
 }
 
-/* Gallery settings */
+/* ==========
+   About page 
+   ========== */
+
+.about-sections h1 {
+	padding-top: 0.1em;
+	padding-bottom: 0.4em;
+}
+
+/* ================
+   Gallery settings 
+   ================ */
 
 .gallery-header {
 	padding-bottom: 25px;
