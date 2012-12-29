@@ -55,14 +55,17 @@ cite {
 	text-align: center;
 	/*
 	font-family: 'Lora', serif; 
-	*/
 	font-family: 'Libre Baskerville', serif;
-	/*
+	*/
 	font-family: 'Sorts Mill Goudy', serif;
+	/*
 	font-family: 'Crimson Text', serif;
 	font-family: 'Cardo', serif;
 	font-family: 'Fanwood Text', serif;
 	*/
+	font-size: 1.25em;
+	background: #EEEEEE;
+	padding: 2em;
 }
 
 .artist_statement .title {
@@ -88,6 +91,7 @@ cite {
 .artist_statement .inspiration {
 	font-style: italic;
 	padding-top: 0.5em;
+	padding-bottom: 2em;
 }
 
 /* CV */
@@ -121,7 +125,7 @@ cite {
    ================ */
 
 .gallery-header {
-	padding-bottom: 25px;
+	padding-bottom: 1em;
 }
 
 .thumbnail {
