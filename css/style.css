@@ -49,6 +49,73 @@ cite {
 	padding-bottom: 0.4em;
 }
 
+/* Artist statement */
+
+.artist_statement {
+	text-align: center;
+	/*
+	font-family: 'Lora', serif; 
+	*/
+	font-family: 'Libre Baskerville', serif;
+	/*
+	font-family: 'Sorts Mill Goudy', serif;
+	font-family: 'Crimson Text', serif;
+	font-family: 'Cardo', serif;
+	font-family: 'Fanwood Text', serif;
+	*/
+}
+
+.artist_statement .title {
+	font-style: italic;
+	text-decoration: underline;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.artist_statement .verb {
+	font-style: italic;
+}
+
+.artist_statement .noun_phrase {
+	padding-bottom: 0.5em;
+}
+
+.artist_statement .signature {
+	font-style: italic;
+	padding-top: 1.5em;
+}
+
+.artist_statement .inspiration {
+	font-style: italic;
+	padding-top: 0.5em;
+}
+
+/* CV */
+
+.CV .title {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.CV .title .name {
+	font-weight: bold;
+}
+
+.CV .section_title {
+	text-decoration: underline;
+	padding-bottom: 1em;
+}
+
+.CV li {
+	list-style-type: none;
+	padding-bottom: 0.25em;
+}
+
+.CV .year {
+	font-weight: bold;
+}
+
 /* ================
    Gallery settings 
    ================ */
