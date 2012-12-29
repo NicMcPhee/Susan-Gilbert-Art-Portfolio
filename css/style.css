@@ -64,17 +64,24 @@ cite {
 	box-shadow: none;
 }
 
-.thumbnail .caption {
-	/* Set the weight and spacing for caption text in thumbnails. */
-	line-height: 1.25em;
-	font-weight: inherit;
-	padding-left: 0.5em;
-	font-size: 1em;
-}
-
 .thumbnail h4 {
 	padding-top: 1em;
 	padding-left: 0.5em;
+}
+
+.thumbnail .caption {
+	/* Set the weight and spacing for caption text in thumbnails. */
+	line-height: 1.5em;
+	padding-left: 1em;
+	font-size: 0.75em;
+}
+
+.thumbnail .media {
+	margin-top: -0.75em;
+}
+
+.thumbnail .dimensions {
+	margin-top: -1.5em;
 }
 
 .fancybox-nav:hover span {
