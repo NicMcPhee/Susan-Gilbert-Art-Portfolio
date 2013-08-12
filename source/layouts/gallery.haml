@@ -22,16 +22,31 @@
     = javascript_include_tag "vendor/custom.modernizr.js"
 
   %body{:class => page_classes}
-    %header
+
+    = partial "header"
+
     .row
       .large-10.columns
         .panel
-          %h1= data.page.title
-          %p Images for this gallery will appear here shortly
+          %h1{:class => "gallery-header"}= data.page.title
+          - data.page.images.each_slice(3) do |row_images|
+            .row
+            - row_images.each do |image|
+              .large-4.columns
+                %a{:href => "http://#{image.flickr_url_prefix}_b.jpg"}
+                  %img{:src => "http://#{image.flickr_url_prefix}_n.jpg", 
+                          :title => "#{image.title}", :alt => "#{image.title}"}
+                .caption
+                  %h4= image.title + " (" + image.year.to_s + ")"
+                  %p{:class => "media"}= "#{image.media}"
+                  - if image.dimensions
+                    %p{:class => "dimensions"}= "#{image.dimensions}"
         %section{:role => "main", :class => "main"}= yield
       .large-2.columns
         %p Gallery links will go here
-    %footer
+    
+    = partial "footer"
+
     -# Application Javascript, safe to override
     = javascript_include_tag "app"
 
