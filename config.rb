@@ -22,6 +22,9 @@ page "humans.txt", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
+
+page "/galleries/*", :layout => "gallery"
+
 #
 # A path which all have the same layout
 # with_layout :admin do
