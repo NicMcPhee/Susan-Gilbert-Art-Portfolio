@@ -24,6 +24,7 @@ page "humans.txt", :layout => false
 # page "/path/to/file.html", :layout => :otherlayout
 
 page "/galleries/*", :layout => "gallery"
+page "/about/*", :layout => "about"
 
 #
 # A path which all have the same layout
