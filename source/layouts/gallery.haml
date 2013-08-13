@@ -45,7 +45,7 @@
       .large-2.columns
         %span.label Galleries
         %ul.side-nav
-          - galleries.each do |gallery|
+          - data.galleries.each do |gallery|
             %li
               %a{:href => "/galleries/#{gallery[:link]}.html"}= gallery[:label]
     

@@ -16,7 +16,7 @@
           %li.has-dropdown
             %a{:href => "#"} Galleries
             %ul.dropdown
-              - galleries.each do |gallery|
+              - data.galleries.each do |gallery|
                 %li
                   %a{:href => "/galleries/#{gallery[:link]}.html"}= gallery[:label]
         %ul.right
