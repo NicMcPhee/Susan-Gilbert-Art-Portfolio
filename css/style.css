@@ -1,0 +1,160 @@
+/* ===== Primary Styles ========================================================
+   Author: Nic McPhee
+   ========================================================================== */
+
+#front_page_image { height: 640px; overflow: hidden; }
+
+.carousel-inner { text-align: center }
+
+.carousel .item > img { display: inline-block; margin-top: 30px }
+
+/* Make link text black instead of blue. */
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+cite {
+	font-style: italic;
+}
+
+/* Change the active element in the right hand navbar to grays. */
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #888888;
+}
+
+.nav .nav-header {
+  text-transform: none;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  text-indent: -0.5em;
+  font-size: 21px;
+  line-height: 27px;
+  color: #888888;
+}
+
+/* ==========
+   About page 
+   ========== */
+
+.about-sections h1 {
+	padding-top: 0.1em;
+	padding-bottom: 0.4em;
+}
+
+/* Artist statement */
+
+.artist_statement {
+	text-align: center;
+	/*
+	font-family: 'Lora', serif; 
+	font-family: 'Libre Baskerville', serif;
+	*/
+	font-family: 'Sorts Mill Goudy', serif;
+	/*
+	font-family: 'Crimson Text', serif;
+	font-family: 'Cardo', serif;
+	font-family: 'Fanwood Text', serif;
+	*/
+	font-size: 1.25em;
+	background: #EEEEEE;
+	padding: 2em;
+}
+
+.artist_statement .title {
+	font-style: italic;
+	text-decoration: underline;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.artist_statement .verb {
+	font-style: italic;
+}
+
+.artist_statement .noun_phrase {
+	padding-bottom: 0.5em;
+}
+
+.artist_statement .signature {
+	font-style: italic;
+	padding-top: 1.5em;
+}
+
+.artist_statement .inspiration {
+	font-style: italic;
+	padding-top: 0.5em;
+	padding-bottom: 2em;
+}
+
+/* CV */
+
+.CV .title {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.CV .title .name {
+	font-weight: bold;
+}
+
+.CV .section_title {
+	text-decoration: underline;
+	padding-bottom: 1em;
+}
+
+.CV li {
+	list-style-type: none;
+	padding-bottom: 0.25em;
+}
+
+.CV .year {
+	font-weight: bold;
+}
+
+/* ================
+   Gallery settings 
+   ================ */
+
+.gallery-header {
+	padding-bottom: 1em;
+}
+
+.thumbnail {
+	/* Turn off the various border features in the thumbnails. */
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.thumbnail h4 {
+	padding-top: 1em;
+	padding-left: 0.5em;
+}
+
+.thumbnail .caption {
+	/* Set the weight and spacing for caption text in thumbnails. */
+	line-height: 1.5em;
+	padding-left: 1em;
+	font-size: 0.75em;
+}
+
+.thumbnail .media {
+	margin-top: -0.75em;
+}
+
+.thumbnail .dimensions {
+	margin-top: -1.5em;
+}
+
+.fancybox-nav:hover span {
+	visibility: hidden;
+}
