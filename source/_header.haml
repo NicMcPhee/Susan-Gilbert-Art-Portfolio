@@ -22,6 +22,12 @@
                 %a{:href => "/galleries/hair.html"} Hair
               %li
                 %a{:href => "/galleries/books.html"} Books
+          %li.has-dropdown
+            %a{:href => "#"} Auto Galleries
+            %ul.dropdown
+              - galleries.each do |gallery|
+                %li
+                  %a{:href => "/galleries/#{gallery}.html"}= gallery
         %ul.right
           %li.has-dropdown
             %a{:href => "#"} About
