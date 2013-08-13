@@ -16,18 +16,9 @@
           %li.has-dropdown
             %a{:href => "#"} Galleries
             %ul.dropdown
-              %li
-                %a{:class => "active", :href => "/galleries/metal.html"} Metal
-              %li
-                %a{:href => "/galleries/hair.html"} Hair
-              %li
-                %a{:href => "/galleries/books.html"} Books
-          %li.has-dropdown
-            %a{:href => "#"} Auto Galleries
-            %ul.dropdown
               - galleries.each do |gallery|
                 %li
-                  %a{:href => "/galleries/#{gallery}.html"}= gallery
+                  %a{:href => "/galleries/#{gallery[:link]}.html"}= gallery[:label]
         %ul.right
           %li.has-dropdown
             %a{:href => "#"} About

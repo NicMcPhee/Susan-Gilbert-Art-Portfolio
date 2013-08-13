@@ -1,5 +1,7 @@
 module GalleryLister
   def galleries
-    ["metal", "hair", "books"]
+    [{:label => "Metal", :link => "metal"}, 
+     {:label => "Hair", :link => "hair"},
+     {:label => "Books", :link => "books"}]
   end
 end
