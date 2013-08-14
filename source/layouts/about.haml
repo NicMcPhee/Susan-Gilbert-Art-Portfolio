@@ -26,16 +26,10 @@
     = partial "header"
 
     .row
-      .large-10.columns
+      .large-12.columns
         .panel
           %h1{:class => "gallery-header"}= data.page.title
           %section{:role => "main", :class => "main"}= yield
-      .large-2.columns
-        %span.label Galleries
-        %ul.side-nav
-          - data.galleries.each do |gallery|
-            %li
-              %a{:href => "/galleries/#{gallery[:link]}.html"}= gallery[:label]
     
     = partial "footer"
 
