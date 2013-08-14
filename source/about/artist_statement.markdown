@@ -1,5 +1,5 @@
 ---
-title: Artist Statement
+title: Artist Statement as of 10th August 2013
 ---
 
 <div class="title">Conserve the ephemeral</div>
