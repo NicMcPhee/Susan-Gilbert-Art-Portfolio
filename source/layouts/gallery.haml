@@ -31,16 +31,16 @@
           %h1{:class => "gallery-header"}= data.page.title
           - data.page.images.each_slice(3) do |row_images|
             .row
-            - row_images.each do |image|
-              .large-4.columns
-                %a{:href => "http://#{image.flickr_url_prefix}_b.jpg"}
-                  %img{:src => "http://#{image.flickr_url_prefix}_n.jpg", 
-                          :title => "#{image.title}", :alt => "#{image.title}"}
-                .caption
-                  %h4= image.title + " (" + image.year.to_s + ")"
-                  %p{:class => "media"}= "#{image.media}"
-                  - if image.dimensions
-                    %p{:class => "dimensions"}= "#{image.dimensions}"
+              - row_images.each do |image|
+                .large-4.columns
+                  %a{:href => "http://#{image.flickr_url_prefix}_b.jpg"}
+                    %img{:src => "http://#{image.flickr_url_prefix}_n.jpg", 
+                            :title => "#{image.title}", :alt => "#{image.title}"}
+                  .caption
+                    %h4= image.title + " (" + image.year.to_s + ")"
+                    %p{:class => "media"}= "#{image.media}"
+                    - if image.dimensions
+                      %p{:class => "dimensions"}= "#{image.dimensions}"
         %hr
         %section{:role => "main", :class => "main"}= yield
     
