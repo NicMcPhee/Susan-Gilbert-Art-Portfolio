@@ -3,33 +3,25 @@
     %nav.top-bar
       %ul.title-area
         %li.name
-          %h1
-            %a{:href => "/"} Susan Gilbert
+          %h1= link_to "Susan Gilbert", "/"
         %li.toggle-topbar.menu-icon
           %a{:href => "#"}
             %span Menu
       %section.top-bar-section.menu-icon
         %ul.left
           %li.divider
-          %li
-            %a{:href => "/"} Home
+          %li= link_to "Home", "/"
           %li.has-dropdown
-            %a{:href => "#"} Galleries
+            = link_to "Galleries", "#"
             %ul.dropdown
               - data.galleries.each do |gallery|
-                %li
-                  %a{:href => "/galleries/#{gallery[:link]}.html"}= gallery[:label]
+                %li= link_to gallery[:label], "/galleries/#{gallery[:link]}.html"
         %ul.right
           %li.has-dropdown
-            %a{:href => "#"} About
+            = link_to "About", "#"
             %ul.dropdown
-              %li
-                %a{:href => "/about/artist_statement.html"} Artist statement
-              %li
-                %a{:class => "active", :href => "/about/CV.html"} CV
-              %li
-                %a{:href => "/about/biography.html"} Biography
-              %li
-                %a{:href => "/about/bibliography.html"} Bibliography
-          %li
-            %a{:href => "/contact"} Contact
+              %li= link_to "Artist statement", "/about/artist_statement.html"
+              %li= link_to "CV", "/about/CV.html"
+              %li= link_to "Biography", "/about/biography.html"
+              %li= link_to "Bibliography", "/about/bibliography.html"
+          %li= link_to "Contact", "/contact"
