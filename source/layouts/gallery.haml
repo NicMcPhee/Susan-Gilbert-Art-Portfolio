@@ -27,7 +27,7 @@
 
     .row
       .large-12.columns
-        .panel
+        .panel.radius
           %h1{:class => "gallery-header"}= data.page.title
           - data.page.images.each_slice(3) do |row_images|
             .row
@@ -41,10 +41,11 @@
                     %p{:class => "media"}= "#{image.media}"
                     - if image.dimensions
                       %p{:class => "dimensions"}= "#{image.dimensions}"
-        %hr
+
         %section{:role => "main", :class => "main"}= yield
     
-    %hr
+    .row
+      %hr
     
     = partial "footer"
 
