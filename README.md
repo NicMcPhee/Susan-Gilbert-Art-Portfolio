@@ -18,3 +18,13 @@ place the results in the ```build``` directory.
 More useful in development is the ```middleman serve``` command, which will start a local webserver to display
 the site, automatically updating the site whenever you save changes. Use the URL in the output of ```middleman serve```
 to connect to the web server and view the live updates.
+
+The command ```middleman help``` will give you some information on the various options available. 
+[The Middleman site](http://middlemanapp.com/) has quite a lot of additional documentation.
+
+## Modifying content
+
+The content for the site is all in the ```source``` directory, mostly in ```source/galleries``` and ```source/about```.
+To modify a gallery, edit the header information (in [YAML format](http://www.yaml.org/spec/1.2/spec.html)). To create 
+a new gallery create a file in ```source/galleries``` with header structure and contents like the existing galleries, 
+and that should automatically be picked up and added to the menus and the web site.
