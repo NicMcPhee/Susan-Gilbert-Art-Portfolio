@@ -1,5 +1,7 @@
 #= require "vendor/jquery"
 
+#= require "jquery.magnific-popup"
+
 # Foundation Javascript
 #= require "foundation/foundation"
 #= require "foundation/foundation.abide"
@@ -24,6 +26,8 @@
   Modernizr = window.Modernizr
   $(document).ready ->
     $(document).foundation()
+    $(".image-link").magnificPopup type: "image"
+    return
 
   # UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
   # $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
