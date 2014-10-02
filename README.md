@@ -16,7 +16,7 @@ The command ```middleman build``` with build the site based on the files in the 
 place the results in the ```build``` directory.
 
 More useful in development is the ```middleman server``` command, which will start a local webserver to display
-the site, automatically updating the site whenever you save changes. Use the URL in the output of ```middleman serve```
+the site, automatically updating the site whenever you save changes. Use the URL in the output of ```middleman server```
 to connect to the web server and view the live updates.
 
 The command ```middleman help``` will give you some information on the various options available. 
