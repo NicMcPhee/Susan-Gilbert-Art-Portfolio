@@ -26,7 +26,20 @@
   Modernizr = window.Modernizr
   $(document).ready ->
     $(document).foundation()
-    $(".image-link").magnificPopup type: "image"
+    $(".gallery-image").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true
+      },
+      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
+    });
+    $(".flex-gallery-image").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true
+      },
+      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
+    });
     return
 
   # UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
