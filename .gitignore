@@ -15,6 +15,17 @@
 
 .rvmrc
 
+################
+# Yeoman ignores
+################
+
+node_modules/
+bower_components/
+*.log
+
+build/
+dist/
+
 ###################
 # JetBrains ignores
 ###################
