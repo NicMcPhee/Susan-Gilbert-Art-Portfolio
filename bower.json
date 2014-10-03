@@ -1,0 +1,22 @@
+{
+  "name": "Susan-Gilbert-Art-Portfolio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/NicMcPhee/Susan-Gilbert-Art-Portfolio",
+  "authors": [
+    "Nic McPhee <mcphee@morris.umn.edu>"
+  ],
+  "description": "Middleman tools for generating Susan Gilbert's artist portfolio site.",
+  "main": "source/index.html.haml",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "magnific-popup": "~0.9.9",
+    "foundation": "~5.4.5"
+  }
+}
