@@ -26,21 +26,14 @@
   Modernizr = window.Modernizr
   $(document).ready ->
     $(document).foundation()
-    $(".gallery-image").magnificPopup({
+    $(".gallery-link").magnificPopup({
       type: "image",
       gallery: {
         enabled: true
       },
-      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
+# This doesn't seem to work, and I don't know why.
+#      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
     });
-    $(".flex-gallery-image").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true
-      },
-      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
-    });
-    return
 
   # UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
   # $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
