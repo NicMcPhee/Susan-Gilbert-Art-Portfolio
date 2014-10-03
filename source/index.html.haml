@@ -47,6 +47,7 @@ Sections:
         %p= section.description
       %ul.flex-container
         - section.images.each do |image|
-          %li.flex-item
-            %a.flex-gallery-image{ :href => "#{image.fullsize}", :title => "#{image.title}"}
-              %img.gallery-x-image{:src => "#{image.thumbnail}"}
+          .small-12.medium-6.large-3.columns
+            %li.flex-item
+              %a.gallery-link{ :href => "#{image.fullsize}", :title => "#{image.title} <small>by Susan Gilbert, photo by Nic McPhee</small>"}
+                %img.gallery-image{:src => "#{image.thumbnail}"}
