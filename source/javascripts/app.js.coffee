@@ -31,6 +31,7 @@
       gallery: {
         enabled: true
       },
+      lazyLoad: [1, 3]
 # This doesn't seem to work, and I don't know why.
 #      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
     });
