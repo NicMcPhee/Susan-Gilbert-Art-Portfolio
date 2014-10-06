@@ -29,9 +29,10 @@
     $(".gallery-link").magnificPopup({
       type: "image",
       gallery: {
-        enabled: true
-      },
-      lazyLoad: [1, 3]
+        enabled: true,
+        preload: [1, 3],
+        arrowMarkup: ''
+      }
 # This doesn't seem to work, and I don't know why.
 #      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
     });
