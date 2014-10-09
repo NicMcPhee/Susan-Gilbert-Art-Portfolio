@@ -12,6 +12,7 @@ require "zurb-foundation"
 
 sprockets.append_path File.join root, 'bower_components'
 sprockets.import_asset 'jquery'
+sprockets.import_asset 'fastclick'
 sprockets.import_asset 'foundation'
 sprockets.import_asset 'magnific-popup'
 

@@ -1,4 +1,5 @@
 #= require "jquery/dist/jquery"
+#= require "fastclick/lib/fastclick"
 
 #= require "magnific-popup/dist/jquery.magnific-popup"
 
