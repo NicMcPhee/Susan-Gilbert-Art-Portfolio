@@ -24,10 +24,9 @@
     = partial "header"
 
     .row
-      .large-12.columns
-        .panel
-          %h1{:class => "gallery-header"}= data.page.title
-          %section{:role => "main", :class => "main"}= yield
+      .panel
+        %h1{:class => "gallery-header"}= data.page.title
+        %section{:role => "main", :class => "main"}= yield
     
     = partial "footer"
 
