@@ -34,8 +34,6 @@
         preload: [1, 3],
         arrowMarkup: ''
       }
-# This doesn't seem to work, and I don't know why.
-#      titleSrc: (item) -> item.el.attr('title') + '<small>by Nic McPhee</small>'
     });
 
   # UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
