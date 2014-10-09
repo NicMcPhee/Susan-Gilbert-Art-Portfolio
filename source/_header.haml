@@ -10,19 +10,17 @@
       %li.divider
       %li= link_to "Home", "/"
       %li.has-dropdown
-        = link_to "Galleries", "#"
-        %ul.dropdown
-          - data.galleries.each do |gallery|
-            %li= link_to gallery[:label], "/galleries/#{gallery[:link]}.html"
-    %ul.right
-      %li.has-dropdown
-        = link_to "About", "#"
-        %ul.dropdown
-          %li= link_to "Artist statement", "/about/artist_statement.html"
-          %li= link_to "CV", "/about/CV.html"
-          %li= link_to "Biography", "/about/biography.html"
-          %li= link_to "Bibliography", "/about/bibliography.html"
-      %li= link_to "Contact", "/contact"
+        -#= link_to "About", "#"
+        %li= link_to "CV", "/about/CV.html"
+        -#%ul.dropdown
+        -#  %li= link_to "Artist statement", "/about/artist_statement.html"
+        -#  %li= link_to "CV", "/about/CV.html"
+        -#  %li= link_to "Biography", "/about/biography.html"
+        -#  %li= link_to "Bibliography", "/about/bibliography.html"
+      -#%li= link_to "Contact", "/contact"
+
+-# I might want to use http://getsimpleform.com as a way to handle Sue's contact form?
+
 .row
   .panel
     %h1.gallery-header Susan Gilbert
