@@ -76,7 +76,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
@@ -85,4 +85,12 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+    deploy.method = :ftp
+    deploy.host = "unhinderedbytalent.com"
+    deploy.user = "SusansPortfolio"
+    deploy.password = `security 2>&1 >/dev/null find-generic-password -ga account_name_for_password |ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'`
+    deploy.path = "/www/www/SusanGilbert"
 end
